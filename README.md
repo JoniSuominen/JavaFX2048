@@ -14,3 +14,5 @@ TODO:
 and doesnt resize back to normal until it merges again.
 
 2. Refractor the code (Currently under work on a seperate branch).
+
+A short GIF of the current game functionality: https://i.imgur.com/fxB0bxe.gifv

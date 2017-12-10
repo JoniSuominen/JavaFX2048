@@ -5,11 +5,7 @@
  */
 package pkg2048.game;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
-import javafx.animation.TranslateTransition;
-import javafx.scene.layout.GridPane;
 
 /**
  * Class containing the 2048 grid, its elements and movement.

@@ -205,6 +205,11 @@ public class GameGrid {
         return false;
     }
 
+    /**
+     * Checks if the board has any empty spots
+     *
+     * @return true if there exists an empty spot on the board
+     */
     public boolean hasEmptySpots() {
         for (int y = 0; y < tiles.length; y++) {
             for (int x = 0; x < tiles[y].length; x++) {
@@ -218,8 +223,23 @@ public class GameGrid {
         return false;
     }
 
+    /**
+     * returns the highest-valued tile on the board - used for checking if the
+     * highest-valued tile equals to 2048.
+     *
+     * @return
+     */
     public int getHighestTile() {
         return this.highestTile;
+    }
+
+    /**
+     * Returns a 2-dimensional array of the tiles on the board.
+     *
+     * @return a 2-dimensional array of the board.
+     */
+    public Tile[][] getTiles() {
+        return this.tiles;
     }
 
     @Override
@@ -237,10 +257,6 @@ public class GameGrid {
             sb.append(("\n"));
         }
         return sb.toString();
-    }
-
-    public Tile[][] getTiles() {
-        return this.tiles;
     }
 
 }

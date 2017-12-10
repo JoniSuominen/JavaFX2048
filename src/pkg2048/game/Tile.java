@@ -139,6 +139,12 @@ public class Tile extends StackPane {
         return merged;
     }
 
+    /**
+     * Returns TranslateTransition-object which performs animation of the tile
+     * moving.
+     *
+     * @return transition-object of the animation.
+     */
     public TranslateTransition transition() {
 
         TranslateTransition tt = new TranslateTransition(Duration.millis(100), this);
@@ -153,6 +159,10 @@ public class Tile extends StackPane {
 
     }
 
+    /**
+     * Performs the Pop-effect which happens when a tile merges or pops up as a
+     * new tile.
+     */
     public void popTile() {
         ScaleTransition st = new ScaleTransition(Duration.millis(100), this);
         st.setByX(0.2f);
